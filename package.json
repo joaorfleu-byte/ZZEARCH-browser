@@ -1,0 +1,20 @@
+{
+  "name": "zzearch-browser",
+  "version": "1.0.0",
+  "description": "ZZEARCH Browser - navegador desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.zzearch.browser",
+    "productName": "ZZEARCH Browser",
+    "files": ["main.js", "preload.js", "index.html", "styles.css", "renderer.js"],
+    "win": { "target": ["portable"] }
+  }
+}

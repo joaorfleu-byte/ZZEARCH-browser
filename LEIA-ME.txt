@@ -1,0 +1,32 @@
+ZZEARCH BROWSER - VERSAO INICIAL
+================================
+
+REQUISITOS
+- Windows 10 ou Windows 11 64 bits
+- Node.js LTS instalado
+- Internet na primeira instalacao para baixar o Electron e dependencias
+
+COMO ABRIR
+1. Extraia o ZIP para uma pasta.
+2. Instale Node.js LTS caso ainda nao tenha: https://nodejs.org/
+3. De dois cliques em INICIAR.bat.
+4. Na primeira vez, aguarde a instalacao das dependencias.
+
+COMO GERAR UM EXECUTAVEL PORTATIL
+1. Com as dependencias instaladas, execute GERAR-PORTABLE.bat.
+2. O Electron Builder criara o executavel na pasta dist.
+
+RECURSOS
+- Abas
+- Barra de endereco e pesquisa Google
+- Voltar, avancar, recarregar e inicio
+- Historico local
+- Favoritos salvos localmente
+- Atalhos Ctrl+T, Ctrl+W e Ctrl+L
+- Sessao persistente do navegador
+
+OBSERVACOES
+- Este ZIP contem o codigo-fonte do navegador, nao um instalador pronto.
+- A primeira inicializacao precisa baixar as dependencias.
+- Alguns sites podem bloquear navegadores incorporados ou exigir verificacoes adicionais.
+- O navegador nao inclui sincronizacao em nuvem nem bloqueador de anuncios.

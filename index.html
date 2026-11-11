@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZEARCH Browser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark">Z</span><span>ZZEARCH</span></div>
+    <div class="window-actions"><span></span><span></span><span></span></div>
+  </header>
+  <nav class="tabbar">
+    <div id="tabs" class="tabs"></div>
+    <button id="newTab" class="new-tab" title="Nova aba">+</button>
+  </nav>
+  <section class="toolbar">
+    <button id="back" class="tool" title="Voltar">‹</button>
+    <button id="forward" class="tool" title="Avançar">›</button>
+    <button id="reload" class="tool" title="Recarregar">↻</button>
+    <button id="home" class="tool" title="Início">⌂</button>
+    <form id="addressForm" class="address-form">
+      <span class="secure">◈</span>
+      <input id="address" autocomplete="off" spellcheck="false" placeholder="Pesquise ou digite um endereço">
+      <button type="button" id="bookmark" title="Adicionar aos favoritos">☆</button>
+    </form>
+    <button id="historyBtn" class="tool" title="Histórico">◷</button>
+  </section>
+  <main id="view">
+    <section id="startPage" class="start-page">
+      <div class="hero-mark">Z</div>
+      <h1>ZZEARCH</h1>
+      <p>Seu espaço para explorar a internet.</p>
+      <form id="searchForm" class="search-box">
+        <span>⌕</span><input id="homeSearch" placeholder="O que você está procurando?" autocomplete="off">
+        <button>Pesquisar</button>
+      </form>
+      <div class="quick-links">
+        <button data-url="https://www.google.com">Google</button>
+        <button data-url="https://www.youtube.com">YouTube</button>
+        <button data-url="https://www.wikipedia.org">Wikipedia</button>
+        <button data-url="https://lagmc.netlify.app">LagMC</button>
+      </div>
+      <div class="start-footer">ZZEARCH BROWSER <span>•</span> NAVEGUE DO SEU JEITO</div>
+    </section>
+    <div id="webContainer" class="web-container"></div>
+  </main>
+  <aside id="historyPanel" class="history-panel hidden">
+    <div class="panel-head"><b>Histórico recente</b><button id="closeHistory">×</button></div>
+    <div id="historyList"></div>
+    <button id="clearHistory" class="clear-history">Limpar histórico</button>
+  </aside>
+  <script src="renderer.js"></script>
+</body>
+</html>

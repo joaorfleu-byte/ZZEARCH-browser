@@ -1,0 +1,14 @@
+COMO GERAR O EXE PELO GITHUB
+
+Este projeto inclui uma automação que compila o executável em um computador Windows na nuvem do GitHub.
+
+1. Crie um repositório no GitHub chamado ZZEARCH-Browser.
+2. Envie todos os arquivos desta pasta para o repositório, incluindo a pasta .github.
+3. Abra a aba Actions do repositório.
+4. Se aparecer, confirme a ativação dos workflows.
+5. Abra "Build ZZEARCH Browser for Windows" e clique em Run workflow.
+6. Aguarde a execução terminar com um visto verde.
+7. Abra a execução concluída e baixe o artefato "ZZEARCH-Browser-Windows".
+8. Extraia o ZIP do artefato. Dentro estará o ZZEARCH Browser.exe.
+
+O EXE é configurado para Windows 10/11 64 bits. A compilação pode levar alguns minutos.
